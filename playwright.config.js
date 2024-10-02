@@ -1,5 +1,3 @@
-// playwright.config.js
-
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
@@ -30,5 +28,3 @@ module.exports = defineConfig({
     video: 'retain-on-failure',    // Record video only on failures
   },
 });
-
-// End of playwright.config.js
