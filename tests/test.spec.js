@@ -40,5 +40,5 @@ async function authenticate(page) {
   await page.screenshot({ path: 'screenshot.png' });
 }
 
-
+// End of the test script
 

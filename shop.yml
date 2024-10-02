@@ -20,3 +20,5 @@ config:
 scenarios:
   - engine: playwright
     testFunctions: "shopFlow"
+
+# It is also important for running the load & performance tests
