@@ -4,7 +4,7 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests', // Directory where your tests are located
-  timeout: 30000,     // Timeout for each test in milliseconds
+  timeout: 600000,     // Timeout for each test in milliseconds
   retries: 2,         // Number of retry attempts if a test fails
   projects: [
     // {

@@ -1,5 +1,6 @@
 const { firefox } = require('playwright'); // Remove the Chromium & Added the Firefox
 const { test, expect } = require('@playwright/test');
+const { testPhoto } = require('ai-visual-tester');
 
 test.describe('My Test Suite', () => {
   test('My Test Case', async ({}) => {
@@ -15,6 +16,17 @@ test.describe('My Test Suite', () => {
 
   });
 });
+
+// For AI-Visual Testing
+// Must need to create an account at OpenAI.com
+// Add the payment card details
+// After receiving the API key, add it to the .env file
+// $env:OPENAI_KEY = "YOUR_API_KEY"
+// test.afterAll(async () => {
+//   const response = await testPhoto('screenshot.png');
+//   console.log(response);
+// });
+
 
 async function authenticate(page) {
   await page.goto('https://bitheap.tech');
